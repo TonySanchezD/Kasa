@@ -1,9 +1,11 @@
-import Logo from '../../layout/logo.png'
+import Logo from './Logo'
+import Nav from './Nav'
 
 function Header() {
     return (
-        <div>
+        <div className='header'>
             <Logo />
+            <Nav />
         </div>
     )
 }

@@ -4,7 +4,6 @@ function Logo() {
     return (
         <div>
             <img src={logo} alt="Logo Kasa"/>
-
         </div>
     )
 }
