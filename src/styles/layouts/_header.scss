@@ -1,9 +1,60 @@
-.header {
-    width: 1240px;
-    height: 68px;
+.header { 
+    height: 47px;
 
     display: flex;
     justify-content: space-between;
-    margin: auto;
-    padding: 40px 0px;
+    margin: 0px 20px;
+    padding: 20px 0px 16px 0px;
+
+    @include desktop {
+        height: 68px;
+        width: 90vw;
+        max-width: 1240px;  
+        margin: auto;
+    }
+}
+
+.logo {
+    height: 47px;
+    width: 145px;
+
+    @include desktop {
+        height: 68px;
+        width: 210.32px;
+    }
+}
+
+.nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    font-size: 12px;
+    font-weight: 500;
+
+    @include desktop {
+        width: 309px;
+        font-size: 24px;
+        justify-content: flex-end;
+    }
+    
+    &--link { 
+        text-transform: uppercase;
+        color: $color-primary;
+
+        @include desktop {
+            text-transform: none;
+            margin-right: 57px;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &__last {
+            @include desktop {
+                margin-right: 0px;
+            }
+        }
+    }
 }

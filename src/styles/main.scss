@@ -2,7 +2,12 @@
 @import './base/font';
 
 @import './utils/variable';
-
-@import './components/nav';
+@import './utils/breakpoints';
 
 @import './layouts/header';
+
+@import './pages/home';
+
+main {
+    margin: 0px 20px;
+}

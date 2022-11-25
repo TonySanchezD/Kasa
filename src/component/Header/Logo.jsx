@@ -2,9 +2,9 @@ import logo from '../../layout/logo.png'
 
 function Logo() {
     return (
-        <div>
-            <img src={logo} alt="Logo Kasa"/>
-        </div>
+        <h1 >
+            <img src={logo} alt="Logo Kasa" className='logo'/>
+        </h1>
     )
 }
 

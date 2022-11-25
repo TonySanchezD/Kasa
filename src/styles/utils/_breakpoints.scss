@@ -1,0 +1,30 @@
+$breakpoints-desktop: 1024px;
+
+
+@mixin desktop {
+    @media screen and (min-width: $breakpoints-desktop) {
+       @content;
+    }
+ }
+
+
+/* breakpoint tablet and small descktop
+
+$breakpoints-tablet: 768px;
+
+@mixin tablet {
+   @media screen and (min-width: $breakpoints-tablet) {
+      @content;
+   }
+}
+ 
+
+$breakpoints-height: 920px;
+
+@mixin desktop-small {
+   @media screen and (min-width: $breakpoints-desktop) and (max-height: $breakpoints-height - 1){
+      @content;
+   }
+}
+
+*/
