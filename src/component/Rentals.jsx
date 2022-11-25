@@ -6,9 +6,10 @@ function Rentals() {
     return (
         <div className="rentals">
             {data.map(rental => (
-                <div key={rental.id}>
-                    <img src={rental.cover} alt={rental.title} />
-                    <h3>{rental.title}</h3>
+                <div className='rental' key={rental.id}>
+                    <div className='rental--filtre'></div>
+                    <img className='rental--img' src={rental.cover} alt={rental.title} />
+                    <h3 className='rental--title'>{rental.title}</h3>
                 </div>
             ))}
         </div>

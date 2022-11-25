@@ -1,6 +1,7 @@
 .banner {
     height: 111px;
     position: relative;
+    margin-bottom: 2px;
 
     &--filter-black {
         background-color: rgba(0, 0, 0, 0.3);
@@ -13,10 +14,12 @@
     &--title {
         position: absolute;
         top: 50%;
+        left: 16px;
         transform: translate(0%, -50%);
 
         color: white;
         font-size: 24px;
+        width: 217px;
 
     }
 
@@ -26,9 +29,46 @@
         background-size: cover;
         height: 100%;
     }
-    
 }
 
-.rentals img {
-    width: 100%;
+.rentals {
+    padding-bottom: 20px;
+}
+
+.rental {
+    position: relative;
+    margin-top: 20px;
+    height: 255px;
+   
+    border-radius: 10px;
+    
+    &--filtre {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        border-radius: 10px;
+    }
+
+    &--title {
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+        right: 20px;
+        
+        
+        
+
+        color: white;
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+    
+    &--img {
+        height: 100%;
+        width: 100%;
+        
+        object-fit: cover;
+        border-radius: 10px;
+    }
 }

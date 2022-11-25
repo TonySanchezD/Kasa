@@ -3,10 +3,10 @@ import Nav from './Nav'
 
 function Header() {
     return (
-        <div className='header'>
+        <header className='header'>
             <Logo />
             <Nav />
-        </div>
+        </header>
     )
 }
 
