@@ -3,6 +3,12 @@
     position: relative;
     margin-bottom: 2px;
 
+    @include tablet {
+        height: 180px;
+    }
+
+    
+
     &--filter-black {
         background-color: rgba(0, 0, 0, 0.3);
         height: 100%;
@@ -21,6 +27,12 @@
         font-size: 24px;
         width: 217px;
 
+        @include tablet {
+            font-size: 36px;
+            width: 100%;
+            text-align: center;
+            left: 0px;
+        }
     }
 
     &--img {
@@ -28,19 +40,42 @@
         border-radius: 10px;
         background-size: cover;
         height: 100%;
+
+        @include tablet {
+            background-image: url('../../layout/landscape.png');
+        }
     }
 }
 
 .rentals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     padding-bottom: 20px;
+
+    @include tablet {
+        padding: 0px 20px 20px 20px;
+        margin-top: 43px;
+
+        background-color: #F7F7F7;
+        border-radius: 10px;
+    }
+    
+    
 }
 
 .rental {
     position: relative;
     margin-top: 20px;
     height: 255px;
+    width: 100%;
    
     border-radius: 10px;
+
+    @include tablet {
+        width: 47.5%;
+    }
     
     &--filtre {
         position: absolute;
@@ -56,12 +91,10 @@
         left: 20px;
         right: 20px;
         
-        
-        
-
         color: white;
         font-size: 18px;
         line-height: 25.67px;
+
     }
     
     &--img {
