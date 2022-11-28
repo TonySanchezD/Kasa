@@ -1,13 +1,16 @@
 .banner {
     height: 111px;
     position: relative;
-    margin-bottom: 2px;
+    margin: 0px auto 2px auto;
 
     @include tablet {
         height: 180px;
     }
 
-    
+    @include desktop {
+        height: 223px;
+        max-width: 1240px;
+    }
 
     &--filter-black {
         background-color: rgba(0, 0, 0, 0.3);
@@ -51,6 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: auto;
 
     padding-bottom: 20px;
 
@@ -60,9 +64,12 @@
 
         background-color: #F7F7F7;
         border-radius: 10px;
+    }    
+
+    @include desktop { 
+        padding: 6px 0px 20px 0px;
+        max-width: 1240px;
     }
-    
-    
 }
 
 .rental {
@@ -75,6 +82,12 @@
 
     @include tablet {
         width: 47.5%;
+    }
+
+    @include desktop {
+        width: 340px;
+        height: 340px;
+        margin: 50px 20px 0px 20px;
     }
     
     &--filtre {

@@ -1,7 +1,8 @@
 .header { 
     height: 47px;
     position: fixed;
-    width: 100%;
+    width: calc(100% - 40px);
+    max-width: 1240px;
     z-index: 999;
     top: 0px;
 
@@ -12,10 +13,16 @@
 
     background-color: white;
     box-shadow: -10px 5px 5px white;
-    
+
     @include tablet {
+        width: calc(100% - 80px);
         height: 68px;
-        margin-left: 40px; /* Marge gauche du Header, la marge droite est sur la nav*/
+        margin: 0px 40px; /* Marge gauche du Header, la marge droite est sur la nav*/
+    }
+
+    @include desktop {
+        left: 50%;
+        transform: translate(calc(-50% - 40px), 0%);
     }
 }
 
@@ -36,7 +43,6 @@
     width: 140px;
     font-size: 12px;
     font-weight: 500;
-    margin-right: 40px;
 
     @include tablet { 
         font-size: 24px;
@@ -52,9 +58,7 @@
         }
 
         &__last {
-            @include tablet {
-                margin-right: 40px;
-            }
+
         }
     }
 }

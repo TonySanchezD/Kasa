@@ -10,6 +10,10 @@
         top: 62px;
         left: 50%;
         transform: translate(-50%);
+
+        @include desktop {
+            top: 69px;
+        }
     }
 
     &--text {
@@ -20,6 +24,9 @@
         width: 100%;
         color: white;
 
-        
+        @include desktop {
+            font-size: 24px;
+            bottom: 30px;
+        }
     }
 }

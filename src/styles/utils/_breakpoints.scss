@@ -1,17 +1,9 @@
 $breakpoints-desktop: 1024px;
 $breakpoints-tablet: 768px;
-$breakpoints-height: 920px;
 
 
 @mixin tablet {
    @media screen and (min-width: $breakpoints-tablet) {
-      @content;
-   }
-}
-
-
-@mixin desktop-small {
-   @media screen and (min-width: $breakpoints-desktop) and (max-height: $breakpoints-height - 1){
       @content;
    }
 }
@@ -21,8 +13,3 @@ $breakpoints-height: 920px;
        @content;
     }
  }
- 
-
-
-
-
