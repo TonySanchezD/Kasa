@@ -1,8 +1,8 @@
-import logo from '../../layout/logo.png'
+import logo from '../../../layout/logo.png'
 
 function Logo() {
     return (
-        <h1 >
+        <h1>
             <img src={logo} alt="Logo Kasa" className='logo'/>
         </h1>
     )
