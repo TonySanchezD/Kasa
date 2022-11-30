@@ -67,8 +67,9 @@
     }    
 
     @include desktop { 
-        padding: 6px 0px 20px 0px;
-        max-width: 1240px;
+        padding: 6px 50px 56px 50px;
+        max-width: 1140px;
+        justify-content: space-between;
     }
 }
 
@@ -85,9 +86,10 @@
     }
 
     @include desktop {
-        width: 340px;
+        width: 31%;
+        max-width: 340px;
         height: 340px;
-        margin: 50px 20px 0px 20px;
+        margin-top: 50px;
     }
     
     &--filtre {
