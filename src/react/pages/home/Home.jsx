@@ -1,6 +1,6 @@
-import Header from '../../component/Header/Header'
+import Header from '../../component/header/Header'
 import Main from './Main'
-import Footer from '../../component/Footer/Footer';
+import Footer from '../../component/footer/Footer';
 
 function Home() {
   return (

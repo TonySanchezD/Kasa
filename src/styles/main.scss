@@ -12,7 +12,15 @@
 main {
     margin: 83px 20px 20px 20px;
 
+    /* Footer dont float : 
+                calc(100vh - margin-top - margin-bot - $height-footer) */
+    min-height: calc(100vh - 83px - 20px - $heigth-footer);
+
     @include tablet {
         margin: 103px 40px 40px 40px;
+
+        /* Footer dont float : 
+                    calc(100vh - margin-top - margin-bot - $height-footer) */
+        min-height: calc(100vh - 103px - 40px - $heigth-footer);
     }
 }
