@@ -1,0 +1,35 @@
+.collapse {
+    margin-top: 20px;
+
+    &--to-activate {
+        background-color: $color-primary;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+
+        &--title {
+            color: white;
+            margin-left: 11.51px;
+            font-size: 13px;
+        }
+
+        &--arrow {
+            margin-right: 10.76px;
+            width: 15.2px;
+            height: 8.98px;
+        }
+    }
+    
+    &--description{
+        color: $color-primary;
+        background-color: #F7F7F7;
+        padding: 23px 6px 52px 11.50px;
+        font-size: 12px;
+        position: relative;
+        bottom: 6px;
+        z-index: -1;
+        border-radius: 5px;
+    }
+}

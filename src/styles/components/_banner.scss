@@ -1,0 +1,63 @@
+.banner {
+    height: 111px;
+    position: relative;
+    margin: 0px auto 2px auto;
+
+    &__about {
+        height: 223px;
+    }
+
+    @include desktop {
+        height: 223px;
+        max-width: 1240px;
+    }
+
+    &--filter-black {
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 10px;
+    }
+
+    &--title {
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translate(0%, -50%);
+
+        color: white;
+        font-size: 24px;
+        width: 217px;
+
+        @include tablet {
+            font-size: 36px;
+            width: 100%;
+            text-align: center;
+            left: 0px;
+        }
+    }
+
+    &--img {
+        border-radius: 10px;
+        background-size: cover;
+        height: 100%;
+
+        &__home {
+            background-image: url('../../layout/landscape_mobil.png');
+
+            @include tablet {
+                background-image: url('../../layout/landscape.png');
+            }
+        }
+
+        &__about {
+            background-image: url('../../layout/landscape_mountain_mobil.png');
+
+            @include tablet {
+                background-image: url('../../layout/landscape_mountain.png');
+            }
+        }
+        
+    }
+}
