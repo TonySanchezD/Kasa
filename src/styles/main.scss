@@ -25,17 +25,17 @@ main {
         max-width: 1240px;
         margin: auto;
         margin-top: 171px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         
 
         /* Footer dont float : 
-                    calc(100vh - margin-top - margin-top-footer - $height-footer) */
-        min-height: calc(100vh - 152px - 20px - $heigth-footer);
+                    calc(100vh - margin-top - margin-bottom - $height-footer) */
+        min-height: calc(100vh - 152px - 40px - $heigth-footer);
     }
 
     @include desktop {
         /* Footer dont float : 
-                    calc(100vh - margin-top - height-footer) */
-        min-height: calc(100vh - 152px - 229px);
+                    calc(100vh - margin-top - margin-bottom -  height-footer) */
+        min-height: calc(100vh - 152px - 20px - 229px);
     }
 }
