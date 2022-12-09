@@ -9,7 +9,7 @@ function Main() {
                 <div className="banner--img banner--img__about"></div>
             </div>
 
-            <div>
+            <div className='collapses-about'>
                 {dataAbout.map((about, index) => (
                     <Collapse key={`${about.title}-${index}`} data={about} index={index}/>
                 ))}
