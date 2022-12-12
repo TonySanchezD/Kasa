@@ -1,0 +1,59 @@
+.error {
+    margin-top: 262px;
+    text-align: center;
+    color: $color-primary;
+
+    /* Footer dont float : 
+                calc(100vh - margin-top - margin-bot - $heigth-footer) */
+    min-height: calc(100vh - 262px - 20px - $heigth-footer);
+
+    @include tablet {
+        /* Footer dont float : 
+                    calc(100vh - margin-top - margin-bot - $heigth-footer) */
+        min-height: calc(100vh - 262px - 40px - $heigth-footer);
+    }
+
+    &--code {
+        height: 99px;
+        font-size: 96px;
+        font-weight: 700;
+        
+
+        @include desktop {
+            height: 263px;
+            font-size: 288px;
+        }
+    }
+
+    &--text {
+        font-size: 18px;
+        margin-top: 11px;
+        margin-bottom: 133px;
+
+        @include desktop {
+            font-size: 36px;
+            margin-top: 66px;
+            margin-bottom: 182px;
+
+            &__br {
+                display: none;
+            }
+        }
+    }
+
+    &--link-home {
+        font-size: 14px;
+        color: $color-primary;
+        text-decoration: underline;
+
+        @include desktop {
+            font-size: 18px;
+        }
+    }
+
+    &--footer {
+        @include desktop {
+            display: none;
+        }
+    }
+}
