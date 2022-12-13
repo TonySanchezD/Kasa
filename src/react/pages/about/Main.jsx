@@ -11,7 +11,7 @@ function Main() {
 
             <div className='collapses-about'>
                 {dataAbout.map((about, index) => (
-                    <Collapse key={`${about.title}-${index}`} data={about} index={index}/>
+                    <Collapse key={`${about.title}-${index}`} title={about.title} description={about.description} index={index}/>
                 ))}
 
             </div>
