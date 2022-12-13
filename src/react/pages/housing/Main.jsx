@@ -37,7 +37,9 @@ function Main() {
                 </div>
             </div>
             <div className='collapses-housing'>
-               
+               <Collapse title='Description' description={housing.description} />
+               <Collapse title='Équipements' description={housing.equipments} />
+
             </div>
         </main>
     )
