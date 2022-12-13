@@ -1,5 +1,11 @@
 .main--about {
     margin-top: 152px;
+
+    @include footer-dont-float ($margin-top: 152px, $margin-bottom: 20px);
+
+    @include tablet {
+        @include footer-dont-float ($margin-top: 152px, $margin-bottom: 40px)
+    }
 }
 
 .main--about .collapse {

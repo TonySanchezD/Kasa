@@ -3,14 +3,10 @@
     text-align: center;
     color: $color-primary;
 
-    /* Footer dont float : 
-                calc(100vh - margin-top - margin-bot - $heigth-footer) */
-    min-height: calc(100vh - 262px - 20px - $heigth-footer);
+    @include footer-dont-float ($margin-top: 262px, $margin-bottom: 20px);
 
     @include tablet {
-        /* Footer dont float : 
-                    calc(100vh - margin-top - margin-bot - $heigth-footer) */
-        min-height: calc(100vh - 262px - 40px - $heigth-footer);
+        @include footer-dont-float ($margin-top: 262px, $margin-bottom: 40px);
     }
 
     &--code {

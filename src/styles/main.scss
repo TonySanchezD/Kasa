@@ -3,6 +3,7 @@
 
 @import './utils/variable';
 @import './utils/breakpoints';
+@import './utils/mixin';
 
 @import './components/banner';
 @import './components/collapse.scss';
@@ -17,26 +18,11 @@
 main {
     margin: 83px 20px 20px 20px;
 
-    /* Footer dont float : 
-                calc(100vh - margin-top - margin-bot - $height-footer) */
-    min-height: calc(100vh - 83px - 20px - $heigth-footer);
-
     @include tablet {
         width: calc(100% - 80px);
         max-width: 1240px;
         margin: auto;
         margin-top: 171px;
         margin-bottom: 40px;
-        
-
-        /* Footer dont float : 
-                    calc(100vh - margin-top - margin-bottom - $height-footer) */
-        min-height: calc(100vh - 152px - 40px - $heigth-footer);
-    }
-
-    @include desktop {
-        /* Footer dont float : 
-                    calc(100vh - margin-top - margin-bottom -  height-footer) */
-        min-height: calc(100vh - 152px - 20px - 229px);
     }
 }
