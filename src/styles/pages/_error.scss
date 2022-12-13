@@ -50,10 +50,4 @@
             font-size: 18px;
         }
     }
-
-    &--footer {
-        @include desktop {
-            display: none;
-        }
-    }
 }
