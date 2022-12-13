@@ -1,5 +1,4 @@
 import data from '../../../data/rentals.json'
-import Housing from '../housing/Housing'
 
 function Main() {
     return (
