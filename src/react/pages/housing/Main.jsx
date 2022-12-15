@@ -27,14 +27,18 @@ function Main() {
                     <p className='info-essential--location'>{housing.location}</p>
                     <ul className='info-essential--tags'>
                         {housing.tags.map( tag => (
-                            <li key={`${housing}-${tag}`}></li>
+                            <li key={`${housing}-${tag}`}>{tag}</li>
                         ))}
                     </ul>
                 </div>
 
                 <div className='info-additoinal'>
-                    <div className='info-additional--name'></div>
                     <div className='info-additional--rating'></div>
+                    <div>
+                        <div className='info-additional--name'>{housing.host.name}</div> 
+                        <img src={housing.host.picture} alt={`Photo de ${housing.host.name}`} />
+                    </div>
+                                       
                 </div>
             </div>
             <div className='collapses-housing'>
