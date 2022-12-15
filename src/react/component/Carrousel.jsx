@@ -3,12 +3,11 @@ import arrowLeft from '../../layout/arrow-left.png';
 import arrowRight from '../../layout/arrow-right.png';
 
 
-
 function Carrousel(props) {
     const housing = props.housing
 
     //<On défini l'image a afficher dans la carrousel>
-    let [positionImg, setImgPosition] = useState(0)         
+    let [positionImg, setImgPosition] = useState(0)   
                                                             
     if (positionImg === -1) {                               
         setImgPosition(housing.pictures.length - 1)         
@@ -21,14 +20,14 @@ function Carrousel(props) {
 
     return (
         <div className='carrousel'>
-            <img className='carrousel--img' src={imgCarrousel} alt={housing} />
+            <img className='carrousel--img' src={imgCarrousel} alt={housing.title} />
             <button className='carrousel--backgroun-arrow carrousel--backgroun-arrow__left' onClick={() => setImgPosition(positionImg - 1)}>
                 <img className='carrousel--arrow-left'  src={arrowLeft} alt='arrow left' />
             </button>
             <button className='carrousel--backgroun-arrow carrousel--backgroun-arrow__right' onClick={() => setImgPosition(positionImg + 1)}>
                 <img className='carrousel--arrow-right'  src={arrowRight} alt='arrow right' />
             </button>
-            <p>{positionImg}</p>
+            <p className='carrousel--counter'>{positionImg + 1}/{housing.pictures.length}</p>
         </div>
     )
 }
