@@ -1,5 +1,6 @@
 import Collapse from '../../component/Collapse';
 import Carrousel from '../../component/Carrousel';
+import Stars from '../../component/Stars';
 import data from '../../../data/rentals.json';
 
 function getDataHousing() {
@@ -16,6 +17,10 @@ function getDataHousing() {
 
 function Main() {
     const housing = getDataHousing()
+    console.log(housing.tags)
+
+    const hostName = housing.host.name.split(' ')
+    console.log('hostName', hostName)
     
 
     return (
@@ -25,23 +30,26 @@ function Main() {
                 <div className='info-essential'>
                     <h2 className='info-essential--title'>{housing.title}</h2>
                     <p className='info-essential--location'>{housing.location}</p>
-                    <ul className='info-essential--tags'>
+                    <ul className='info-essential--box-tags'>
                         {housing.tags.map( tag => (
-                            <li key={`${housing}-${tag}`}>{tag}</li>
+                            <li className='info-essential--box-tags--tag' key={`${housing}-${tag}`}>{tag}</li>
                         ))}
                     </ul>
                 </div>
 
-                <div className='info-additoinal'>
-                    <div className='info-additional--rating'></div>
-                    <div>
-                        <div className='info-additional--name'>{housing.host.name}</div> 
-                        <img src={housing.host.picture} alt={`Photo de ${housing.host.name}`} />
+                <div className='info-additional'>
+                    <Stars rating={housing.rating} />
+                    <div className='info-additional--host'>
+                        <div className='info-additional--host--name'>
+                            <p>{hostName[0]}</p> 
+                            <p>{hostName[1]}</p> 
+                        </div>
+                        <img className='info-additional--host--picture' src={housing.host.picture} alt={`${housing.host.name}`} />
                     </div>
                                        
                 </div>
             </div>
-            <div className='collapses-housing'>
+            <div className='collapses'>
                <Collapse title='Description' description={housing.description} />
                <Collapse title='Équipements' description={housing.equipments} />
             </div>

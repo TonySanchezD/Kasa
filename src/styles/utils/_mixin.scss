@@ -1,4 +1,4 @@
 //Min-height à venir appliquer au main pour que le footer ne flotte pas
-@mixin footer-dont-float ($margin-top, $margin-bottom) {
+@mixin footer-dont-float($margin-top, $margin-bottom) {
     min-height: calc(100vh - $margin-top - $margin-bottom - $height-footer);
 }
