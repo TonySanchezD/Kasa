@@ -11,8 +11,23 @@
 .main--about .collapse {
     width: 100%;
 
-    @include tablet {
+    @include tablet { 
         width: 82.4%;
+        
+    }
+
+    &--to-activate {
+        height: 47px;
+
+        &--title {
+            font-size: 24px;
+        }
+    }
+    
+    &--description {
+        font-size: 24px;
+        line-height: 1.3em;
+        padding: 36px 27px 19px 18px;
     }
 }
 
