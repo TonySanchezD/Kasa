@@ -7,14 +7,35 @@
     }
 }
 
+.all-info {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 6px;
+    }
+}
+
 .info-essential {
     color: $color-primary;
     margin-top: 15px;
+    max-width: 78%;
+
+    @include desktop{
+        margin-top: 30px;
+    }
 
     &--title {
         font-size: 18px;
         font-weight: 500;
         line-height: 1.3em;
+
+        @include tablet {
+            font-size: 26px;
+        }
+
+        @include desktop {
+            font-size: 36px;
+        }
     }
 
     &--location {
@@ -23,6 +44,10 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 22px;
+
+        @include desktop {
+            font-size: 18px;
+        }
     }
 
     &--box-tags {
@@ -44,6 +69,15 @@
             color: white;
             font-size: 10px;
             border-radius: 5px;
+
+            
+
+            @include tablet {
+                height: 25px;
+                min-width: 115px;
+
+                font-size: 14px;
+            }
         }
     }
 }
@@ -56,12 +90,25 @@
     align-items: center;
     color: $color-primary;
 
+    @include tablet { 
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
     &--stars {
         display: flex;
         margin-top: 0.5px;
 
+        @include tablet {
+            margin-top: 24px;
+        }
+
         &--one-star {
             height: 15px;
+
+            @include tablet {
+                height: 30px;
+            }
         }
 
     }
@@ -80,15 +127,55 @@
 
             font-size: 12px;
             font-weight: 500;
+
+            @include tablet { 
+                height: 45px;
+                margin-top: 25px;
+                font-size: 18px;
+                text-align: end;
+            }
         }
 
         &--picture {
             height: 32px;
             border-radius: 100%;
+
+            @include tablet {
+                height: 64px;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+.main-housing .collapses { 
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.main-housing .collapse { 
+    @include tablet {
+        width: calc(50% - 38px);
+    
+        &--to-activate {
+            height: 52px;
+        }
+
+        &--description {
+            padding-top: 40px;
+            padding-bottom: 27px;
+            line-height: 25.67px;
         }
     }
 }
 
 .main-housing .collapse:first-child {
     margin-top: 0px;
+
+    @include tablet {
+        margin-top: 20px;
+    }
 }
+

@@ -17,11 +17,11 @@ function getDataHousing() {
 
 function Main() {
     const housing = getDataHousing()
-    console.log(housing.tags)
 
     const hostName = housing.host.name.split(' ')
-    console.log('hostName', hostName)
-    
+
+    console.log(document.querySelectorAll(".collapse"))
+
 
     return (
         <main className="main-housing">
@@ -45,8 +45,7 @@ function Main() {
                             <p>{hostName[1]}</p> 
                         </div>
                         <img className='info-additional--host--picture' src={housing.host.picture} alt={`${housing.host.name}`} />
-                    </div>
-                                       
+                    </div>            
                 </div>
             </div>
             <div className='collapses'>
