@@ -1,5 +1,6 @@
 .main-housing {
     margin-top: 94px;
+    @include footer-dont-float(94px, 20px)
 }
 
 .info-essential {
@@ -84,6 +85,6 @@
     }
 }
 
-.collapse:first-child {
+.main-housing .collapse:first-child {
     margin-top: 0px;
 }
