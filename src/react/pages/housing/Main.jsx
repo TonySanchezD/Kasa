@@ -1,7 +1,9 @@
 import Collapse from '../../component/Collapse';
 import Carrousel from '../../component/Carrousel';
 import Stars from '../../component/Stars';
-import data from '../../../data/rentals.json';
+import rentalsData from '../../../data/rentals.json';
+
+import Error from '../error/Error';
 
 function getDataHousing() {
     //Récupérer l'id du logement
@@ -9,7 +11,7 @@ function getDataHousing() {
     const idHousing = urlParams.get('id');  
     //
 
-    const housing = data.find(housing => housing.id === idHousing)
+    const housing = rentalsData.find(housing => housing.id === idHousing)
 
     return housing
 }
@@ -18,11 +20,14 @@ function getDataHousing() {
 function Main() {
     const housing = getDataHousing()
 
+    if (housing === undefined) {
+        return <Error />
+    }
+    
     const hostName = housing.host.name.split(' ')
 
     console.log(document.querySelectorAll(".collapse"))
-
-
+    
     return (
         <main className="main-housing">
             <Carrousel housing={housing} />
