@@ -38,6 +38,11 @@
         max-width: 340px;
         height: 340px;
         margin-top: 50px;
+
+        &:last-child {
+            margin-right: auto;
+            margin-left: 3.5%;
+        }
     }
     
     &--filtre {
@@ -66,5 +71,5 @@
         
         object-fit: cover;
         border-radius: 10px;
-    }
+    }    
 }

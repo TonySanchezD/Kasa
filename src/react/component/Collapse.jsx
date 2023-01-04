@@ -7,8 +7,6 @@ function Collapse(props) {
     let description = props.description
     const index = props.index
 
-    console.log("typeof description", typeof description)
-
     const [isOpen, setIsOpen] = useState(false)
 
 
