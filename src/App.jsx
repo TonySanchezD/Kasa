@@ -5,8 +5,6 @@ import Housing from './react/pages/housing/Housing';
 import About from './react/pages/about/About'
 import Error from './react/pages/error/Error'
 
-import rentalsData from "./data/rentals.json";
-
 function App() {
     return (
         <div>

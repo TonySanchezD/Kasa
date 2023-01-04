@@ -1,32 +1,13 @@
 import Collapse from '../../component/Collapse';
 import Carrousel from '../../component/Carrousel';
 import Stars from '../../component/Stars';
-import rentalsData from '../../../data/rentals.json';
-
-import Error from '../error/Error';
-
-function getDataHousing() {
-    //Récupérer l'id du logement
-    const urlParams = new URLSearchParams(window.location.search);
-    const idHousing = urlParams.get('id');  
-    //
-
-    const housing = rentalsData.find(housing => housing.id === idHousing)
-
-    return housing
-}
 
 
-function Main() {
-    const housing = getDataHousing()
+function Main(props) {
+    const housing = props.housing
 
-    if (housing === undefined) {
-        return <Error />
-    }
     
     const hostName = housing.host.name.split(' ')
-
-    console.log(document.querySelectorAll(".collapse"))
     
     return (
         <main className="main-housing">
