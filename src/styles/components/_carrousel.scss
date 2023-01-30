@@ -29,6 +29,11 @@
         top: 50%;
         transform: translate(0%, -50%);
         width: 11.67px;
+
+        @include tablet {
+            width: 46px;
+            left: 23px;
+        }
     }
 
     &--arrow-right {
@@ -37,12 +42,21 @@
         top: 50%;
         transform: translate(0%, -50%);
         width: 11.67px;
+
+        @include tablet {
+            width: 46px;
+            right: 23px;
+        }
     }
 
     &--backgroun-arrow {
         position: absolute;
         height: 100%;
         width: 23.35px;
+
+        @include tablet {
+            width: 100px;
+        }
         
         &__left {
             left: 0px;

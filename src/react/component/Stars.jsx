@@ -24,7 +24,7 @@ function Stars(props) {
             </div>
             <div>
                 {arrayStarsGrey.map( starGrey => (
-                    <img className='info-additional--star--one-star' key={`orange-star-${starGrey}`} src={imgStarGrey} alt="Étoile orange" />
+                    <img className='info-additional--stars--one-star' key={`grey-star-${starGrey}`} src={imgStarGrey} alt="Étoile grise" />
                 ))}
             </div>
         </div>
