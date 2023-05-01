@@ -5,7 +5,7 @@ function Main() {
         <main>
             <div className="banner">
                 <div className="banner--filter-black"></div>
-                <h2 className="banner--title"> test Chez vous, partout et ailleurs</h2>
+                <h2 className="banner--title">Chez vous, partout et ailleurs</h2>
                 <div className="banner--img banner--img__home"></div>
             </div>
             <div className="rentals">
