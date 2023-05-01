@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/kasa/static/css/main.8f7ca49a.css",
-    "main.js": "/kasa/static/js/main.a0e6efca.js",
+    "main.js": "/kasa/static/js/main.e689aa57.js",
     "static/media/landscape_mountain.png": "/kasa/static/media/landscape_mountain.fce6fc3e9ed27433e9b0.png",
     "static/media/landscape.png": "/kasa/static/media/landscape.efc1935eb81fc5e585f9.png",
     "static/media/landscape_mountain_mobil.png": "/kasa/static/media/landscape_mountain_mobil.40c3d9bcd588a199d69e.png",
     "static/media/landscape_mobil.png": "/kasa/static/media/landscape_mobil.f9f1a5d16f2d13a6a9ff.png",
     "index.html": "/kasa/index.html",
     "main.8f7ca49a.css.map": "/kasa/static/css/main.8f7ca49a.css.map",
-    "main.a0e6efca.js.map": "/kasa/static/js/main.a0e6efca.js.map"
+    "main.e689aa57.js.map": "/kasa/static/js/main.e689aa57.js.map"
   },
   "entrypoints": [
     "static/css/main.8f7ca49a.css",
-    "static/js/main.a0e6efca.js"
+    "static/js/main.e689aa57.js"
   ]
 }
