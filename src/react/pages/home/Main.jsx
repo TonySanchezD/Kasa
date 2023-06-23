@@ -1,4 +1,5 @@
-import data from '../../../data/rentals.json'
+import data from '../../../data/rentals.json';
+import { Link } from 'react-router-dom';
 
 function Main() {
     return (
@@ -10,11 +11,11 @@ function Main() {
             </div>
             <div className="rentals">
                 {data.map(rental => (
-                    <a className='rental' key={rental.id} href={`./housing?id=${rental.id}`}>
+                    <Link className='rental' key={rental.id} to={`/housing?id=${rental.id}`}>
                         <div className='rental--filtre'></div>
                         <img className='rental--img' src={rental.cover} alt={rental.title} />
                         <h3 className='rental--title'>{rental.title}</h3>
-                    </a>
+                    </Link>
             ))}
             </div>
         </main>
