@@ -22,6 +22,7 @@ function Housing() {
   const housing = getDataHousing()
 
   if (housing === undefined) {
+      console.log("housing is undefined")
       return <Error />
   }
 

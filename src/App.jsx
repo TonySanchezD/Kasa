@@ -11,17 +11,9 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/kasa" element={<Home />} />
-
                     <Route path="/Housing" element={<Housing/>} />
-                    <Route path="/kasa/Housing" element={<Housing/>} />
-
                     <Route path="/About" element={<About/>} />
-                    <Route path="/kasa/About" element={<About/>} />
-
                     <Route path="/*" element={<Error/>} />
-                    <Route path="/kasa/*" element={<Error/>} />
-
                 </Routes>
             </BrowserRouter>
         </div>
